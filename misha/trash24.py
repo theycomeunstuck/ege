@@ -1,5 +1,5 @@
 
-f = open('txt.txt').readline()
+f = open('fillers/24-1.txt').readline()
 
 s, mx = [], 0
 for i in range(len(f)):

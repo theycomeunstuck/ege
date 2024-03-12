@@ -1,6 +1,6 @@
 #Определите, наибольшее количество детей, которые придут в парк и
 #покатаются на аттракционах за 24 часа и номер аттракциона, который займут последним.
-f = open('fillers/26-1.txt')
+f = open('../fillers/26-1.txt')
 k, n = f.readline().split() #аттракционы, колво детей
 a = sorted([list(map(int, i.split())) for i in f])
 print(a)
@@ -18,6 +18,8 @@ for j in range(int(k)):
     for i in l:
         a.pop(i)
 print(f'count of clients: {(n-len(a))}\nlatest engaged time: {mx}')
+
+
 """f = open('file.txt')
 k = int(f.readline()) #cell
 n = int(f.readline()) #total clients count

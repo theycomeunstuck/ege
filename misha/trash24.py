@@ -1,28 +1,12 @@
+s = open('fillers/24-280.txt').readline()
+l, m, kx, ky = 0, 0, 0, 0
 
-f = open('fillers/24-1.txt').readline()
-print(f)
-s, mx = [], 0
-for i in range(len(f)):
-    s.append(f[i])
-    for j in range(i+1, len(f)):
-        if f[j] not in s:
-            s.append(f[j])
-        else:
-            if mx < len(s):
-                mx = len(s)
-            s = []
-            break
-    if len(s) == 26:
-        break
-print(mx)
-
-
-
-
-
-
-
-
-
-
-
+for r in range(len(s)):
+    if s[r] == 'X': kx += 1
+    if s[r] == 'Y': ky += 1
+    while kx > 1 or ky > 1:
+        if s[l] == 'X': kx -=1
+        if s[l] == 'Y': ky -=1
+        l += 1
+    if kx == 1 and ky == 1: m = max(m, r - l + 1)
+print(m)

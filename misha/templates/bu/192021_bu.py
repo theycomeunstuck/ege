@@ -21,5 +21,5 @@ print(f'answer: {s}')
 # if (t[0], t[1]) == 1: steps = -1 (cause there is from a options which direct to win only
 # /если сразу два пути ведут к победе)
 
-#
+
 

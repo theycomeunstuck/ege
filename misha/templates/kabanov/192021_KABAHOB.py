@@ -29,7 +29,7 @@ print('21:', [s for s in range(1,25) if (s,2)])
 
 
 #important.
-# - Ваня может выиграть своим первым ходом после одного из ходов Пети -- extra check. manual is pretty simple.
+# - Ваня может выиграть своим первым ходом после одного из ходов Пети -- needed extra check. manual is pretty simple.
 
 
 

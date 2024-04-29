@@ -13,3 +13,5 @@ for mask in range(31):
         print(mask, net)
 
 
+print(bin(110)[2:].zfill(8))
+bin(255).count("1")

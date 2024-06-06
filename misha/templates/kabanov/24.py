@@ -5,10 +5,9 @@
 4524. определите максимальное количество идущих подряд символов, среди которых не более одной точки. /aaaa.bbbbbbbbb.cc.dd
 '''
 
-
+#24
 s = open('txt.txt').readline()
 l, m, k = 0, 0, 0
-
 for r in range(len(s)):
     if s[r] == '.': k +=1
     while k > 1:

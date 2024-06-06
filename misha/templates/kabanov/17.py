@@ -1,4 +1,6 @@
-a = [int(x) for x in open('file.txt')]
+a = [int(x) for x in open('file.txt')] #17
+
+
 # ans_mass = []
 # ans = [x for x in a if x % 3 == 0 and x % 7 != 0 and x % 19 != 0 and  x % 17 != 0 and x % 27 != 0]
 # # for i in range(len(a)):
